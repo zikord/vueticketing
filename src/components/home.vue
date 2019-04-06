@@ -10,7 +10,7 @@
     <movies  :show="show"></movies>
     <projection :show="show"></projection>
     <feedback :show="show"></feedback>
-    <actors></actors>
+    <top-movies></top-movies>
     <two-column></two-column>
     <connect></connect>
     <page-footer></page-footer>
@@ -24,7 +24,7 @@ import jumbotron from "../components/homeComponents/jumbotron.vue"
 import welcome from "../components/homeComponents/welcomeSection.vue"
 import threeColumn from "../components/homeComponents/threeColumnSection.vue"
 import twoColumn from "../components/homeComponents/twoColumnSection.vue"
-import actors from "../components/homeComponents/popularActors.vue"
+import topMovies from "../components/homeComponents/popularMovies.vue"
 import connect from "../components/homeComponents/connect.vue"
 import navbar from "../components/homeComponents/navbar.vue"
 import pageFooter from "../components/homeComponents/footer.vue"
@@ -42,7 +42,7 @@ export default {
       welcome,
       threeColumn,
       twoColumn,
-      actors,
+      topMovies,
       connect,
       navbar,
       pageFooter,
