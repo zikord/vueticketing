@@ -10,32 +10,12 @@
     </div>
     <div class="container-fluid padding">
         <div class="row padding">
-            <div class="col-md-4">
+            <div class="col-md-4" v-for="(movie, index) in movies" :key="index">
                 <div class="card">
-                    <img class="card-img-top" src="#">
+                    <img class="card-img-top" :src="movie.poster" width="200" height="600">
                     <div class="card-body">
-                        <h4 class="card-title">Some Actor Name></h4>
-                        <p>Some actor info</p>
-                        <a href="#" class="btn btn-outline-secondary">More Info</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="card-img-top" src="#">
-                    <div class="card-body">
-                        <h4 class="card-title">Some Actor Name 2></h4>
-                        <p>Some actor info</p>
-                        <a href="#" class="btn btn-outline-secondary">More Info</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="card-img-top" src="#">
-                    <div class="card-body">
-                        <h4 class="card-title">Some Actor Name 3></h4>
-                        <p>Some actor info</p>
+                        <h4 class="card-title">{{movie.title}}></h4>
+                        <p>Movie Info</p>
                         <a href="#" class="btn btn-outline-secondary">More Info</a>
                     </div>
                 </div>
@@ -46,7 +26,29 @@
 </template>
 
 <script>
+import http from "/vueticketing/src/http-user.js";
+
 export default {
-  name: "popular-actors"
-};
+  name: "popular-actors",
+  data(){
+    return {
+      movies: []
+    }
+  },
+   methods: {
+    topMovies() {
+      http
+        .get(
+          "api/movie/top/")
+        .then(response => {
+          this.movies = response.data; // JSON are parsed automatically.
+          // eslint-disable-next-line 
+          console.log(response.data);
+        });
+    }
+},
+    mounted(){
+      this.topMovies();
+    }
+}
 </script>

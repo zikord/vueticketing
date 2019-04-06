@@ -74,7 +74,7 @@ export default {
     retrieveProjections() {
       http
         .get(
-          "api/movies/date/" +
+          "api/movie/date/" +
             moment(this.today).format("YYYY-MM-DD"))
         .then(response => {
           this.movies = response.data; // JSON are parsed automatically.
