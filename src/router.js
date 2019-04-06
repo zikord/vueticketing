@@ -1,8 +1,8 @@
 import Vue from "vue";
 import Router from "vue-router";
-import searchProjections from "./components/searchProjections.vue";
-import home from "./components/home.vue";
-import movies from "./components/homeComponents/movies.vue";
+import searchProjections from "./components/SearchProjections.vue";
+import home from "./components/Home.vue";
+import movies from "./components/homeComponents/Movies.vue";
 
 Vue.use(Router);
  

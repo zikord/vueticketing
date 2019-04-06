@@ -19,19 +19,19 @@
 
 
 <script>
-import carousel from "../components/homeComponents/carousel.vue"
-import jumbotron from "../components/homeComponents/jumbotron.vue"
-import welcome from "../components/homeComponents/welcomeSection.vue"
-import threeColumn from "../components/homeComponents/threeColumnSection.vue"
-import twoColumn from "../components/homeComponents/twoColumnSection.vue"
-import topMovies from "../components/homeComponents/popularMovies.vue"
-import connect from "../components/homeComponents/connect.vue"
-import navbar from "../components/homeComponents/navbar.vue"
-import pageFooter from "../components/homeComponents/footer.vue"
+import carousel from "../components/homeComponents/Carousel.vue"
+import jumbotron from "../components/homeComponents/Jumbotron.vue"
+import welcome from "../components/homeComponents/WelcomeSection.vue"
+import threeColumn from "../components/homeComponents/ThreeColumnSection.vue"
+import twoColumn from "../components/homeComponents/TwoColumnSection.vue"
+import topMovies from "../components/homeComponents/PopularMovies.vue"
+import connect from "../components/homeComponents/Connect.vue"
+import navbar from "../components/homeComponents/Navbar.vue"
+import pageFooter from "../components/homeComponents/Footer.vue"
 import login from "../components/loginAndReg/Login.vue"
 import registration from "../components/loginAndReg/AddUser.vue"
-import projection from "../components/searchProjections.vue"
-import movies from "../components/homeComponents/movies.vue"
+import projection from "../components/SearchProjections.vue"
+import movies from "../components/homeComponents/Movies.vue"
 import feedback from "../components/homeComponents/Feedback.vue"
 
 export default {

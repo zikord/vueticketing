@@ -15,9 +15,9 @@
 </template><script>
 import http from  "/vueticketing/src/http-user.js";
 import { GoodWizard } from "vue-good-wizard";
-import pageOne from "../components/reservationPages/pageOne.vue";
-import pageTwo from "../components/reservationPages/pageTwo.vue";
-import pageThree from "../components/reservationPages/pageThree.vue";
+import pageOne from "../components/reservationPages/PageOne.vue";
+import pageTwo from "../components/reservationPages/PageTwo.vue";
+import pageThree from "../components/reservationPages/PageThree.vue";
 
 export default {
   name: "projection-list",
