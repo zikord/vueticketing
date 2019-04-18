@@ -3,7 +3,7 @@
     <navbar></navbar>
     <login></login>
     <registration></registration>
-    <carousel :show="show" @clicked="goto"></carousel>
+    <carousel></carousel>
     <jumbotron></jumbotron>
     <welcome></welcome>
     <three-column :rShow="show" @clicked="onClick"></three-column>
@@ -61,9 +61,6 @@ export default {
   },
   methods: {
     onClick(value) {
-      this.show = value;
-    },
-    goto(value) {
       this.show = value;
     }
   }
