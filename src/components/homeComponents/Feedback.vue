@@ -2,7 +2,7 @@
   <div class="container-fluid padding" v-if="show == 3">
     <div class="m-auto col-sm-10 col-md-8 col-lg-6 text-center">
     <div v-if="sentFeedback">
-      <h3>Feedback successfully sent.Thank you!</h3>
+      <h3>Feedback successfully sent.Thank you {{username}}!</h3>
       <input type="button" class="btn btn-outline-secondary btn-lg" @click="sentFeedback = false" value="Back"/>
     </div>
     <form v-else @submit.prevent="submitFeedback">
@@ -38,7 +38,8 @@ export default {
     return {
       feedbackText: "",
       rating: 0,
-      sentFeedback: false
+      sentFeedback: false,
+      username: ''
     }
   },
   props: { show: Number },
@@ -62,6 +63,7 @@ export default {
           // eslint-disable-next-line
           console.log(response.data)
           this.sentFeedback = true;
+          this.username = response.data
           return true;
         })
       }

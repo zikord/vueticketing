@@ -2,13 +2,11 @@
 <div class="container-fluid padding">
     <div class="row welcome text-center">
         <div class="col-12">
-            <h1 class="dispaly-4">Built with ease.</h1>
+            <h1 class="dispaly-4">Main menu</h1>
         </div>
         <hr>
         <div class="col-12">
-            <p class="lead">Placeholder text, later we will add real text
-                 here, Thanks for understanding and thank you for your
-                  patience.This site is still in working stage.Cheers!</p>
+            <p class="lead">Select icons for more options</p>
         </div>
     </div>
 </div>

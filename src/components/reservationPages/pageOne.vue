@@ -19,7 +19,7 @@
           <div>
           <span class="font-weight-bold">Time And Dimension: </span>
           <button type="button" class="btn btn-outline-secondary btn-sm dateBtn" v-for="(projection, index) in movie.projections" :key="index" @click="selectMovie(projection, movie.title, movie.duration)">
-             {{ moment(projection.projectionDate).format("LT") }} - {{projection.dimension}}</button>
+             {{ projection.projectionTime }} - {{projection.dimension}}</button>
           </div>
           <div>
             <p><span class="font-weight-bold">Duration:</span> {{movie.duration}} min</p>

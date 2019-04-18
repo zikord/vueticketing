@@ -7,11 +7,11 @@
         <h2>Connect</h2>
       </div>
       <div class="col-12 social padding">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-google-plus-g"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="https://sr-rs.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/zikord" target="_blank"><i class="fab fa-github-square"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" ></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube" ></i></a>
       </div>
     </div>
 </div>
@@ -35,7 +35,7 @@ export default {
 .fa-twitter {
   color: #00aced;
 }
-.fa-google-plus-g {
+.fa-github-square {
   color: #dd4b39;
 }
 .fa-instagram {
@@ -44,7 +44,7 @@ export default {
 .fa-youtube {
   color: #bb0000;
 }
-.fa-facebook:hover,.fa-google-plus-g:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-youtube:hover {
+.fa-facebook:hover,.fa-github-square:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-youtube:hover {
  color: #d5d5d5;
 }
 

@@ -6,8 +6,8 @@
             <div class="carousel-caption">
                 <h1 class="display-2">CINEMA TICKETS</h1>
                 <h3>WELCOME</h3>
-                <button type="button" @click="goto" class="btn peach-gradient btn-lg">VIEW MOVIES</button>
-                <button type="button" @click="goto" class="btn purple-gradient btn-lg">Projections</button>
+                <button type="button" @click="goto(1)" class="btn peach-gradient btn-lg">VIEW MOVIES</button>
+                <button type="button" @click="goto(2)" class="btn purple-gradient btn-lg">Projections</button>
             </div>            
             </div>
         </div>
@@ -19,8 +19,8 @@ export default {
   name: "carousel",
   props: {show: Number},
   methods: {
-    goto(){
-      this.$root.$emit('goto');     
+    goto(value){
+      this.$root.$emit('goto', value);  
     }
   }
 };

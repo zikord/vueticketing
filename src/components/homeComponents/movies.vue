@@ -23,9 +23,9 @@
       </div>
       <div class="col-lg-6">
           <iframe v-if="toggle == true" width="500" height="400"
-          :src="'https://www.youtube.com/embed?listType=search&list=' + title + 'trailer'">
+          :src="'https://www.youtube.com/embed?listType=search&list=' + movie.Title + 'trailer'">
         </iframe>
-        <img v-else :src="movie.Poster" @load="imgLoaded" v-show="showImg" class="img-fluid">
+        <img v-else :src="movie.Poster" @load="imgLoaded" v-show="showImg" class="img-fluid" :alt="'No image available for ' + movie.Title">
       </div>     
     </div>
     <hr class="my-4">

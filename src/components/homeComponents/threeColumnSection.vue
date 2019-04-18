@@ -36,10 +36,9 @@ export default {
     }
   },
   mounted(){
-        this.$root.$on('goto', () => {
-        var element = this.$refs["goto"];
-        var top = element.offsetTop;
-        window.scrollTo(0, top);
+        this.$root.$on('goto',(value) => {
+        window.scrollTo(0, this.$refs["goto"].offsetTop);
+        this.open(value);
     });
   }
 };
